@@ -1,0 +1,257 @@
+/* --- BASE --- */
+body {
+    background-color: #000;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: white;
+}
+
+/* --- MISE EN PAGE --- */
+.zone-ambitions {
+    margin-left: 200px;
+    margin-top: 100px;
+    padding: 50px;
+    flex: 1;
+}
+
+.titre-page {
+    color: #a64d79;
+    font-size: 3rem;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* --- BLOC ACCROCHE --- */
+.bloc-citation {
+    background-color: #1a1a1a;
+    border-left: 5px solid #a64d79;
+    padding: 30px;
+    margin-bottom: 50px;
+    max-width: 900px;
+    font-style: italic;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* --- GRILLE CARTES --- */
+.grille-ambitions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 60px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carte-ambition {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    padding: 25px;
+    border-radius: 12px;
+    width: 280px;
+    transition: transform 0.3s ease;
+}
+
+.carte-ambition:hover {
+    transform: scale(1.05);
+    border-color: #a64d79;
+}
+
+.carte-ambition h3 {
+    color: #a64d79;
+    margin-top: 0;
+    font-size: 1.8rem;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+}
+
+.carte-ambition p {
+    font-size: 1.2rem;
+    color: #ccc;
+    line-height: 1.4;
+}
+
+/* --- TITRES DE SECTION --- */
+.titre-section {
+    color: #a64d79;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    margin-top: 0;
+}
+
+.sous-titre-section {
+    color: #888;
+    font-size: 0.95rem;
+    margin-bottom: 30px;
+    letter-spacing: 0.04em;
+}
+
+/* --- PARCOURS VISÉ --- */
+.bloc-parcours {
+    margin-bottom: 60px;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.parcours-etapes {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.etape {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    background-color: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    border-left: 3px solid #333;
+    border-radius: 12px;
+    padding: 20px 24px;
+    transition: border-color 0.2s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.etape-actuelle {
+    border-left: 3px solid #a64d79;
+}
+
+.etape:hover {
+    border-left-color: #a64d79;
+}
+
+.etape-icone {
+    font-size: 2rem;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.etape-contenu h4 {
+    color: #fff;
+    font-size: 1.1rem;
+    margin: 6px 0 8px 0;
+}
+
+.etape-contenu p {
+    color: #ccc;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.etape-badge {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 3px 10px;
+    border-radius: 20px;
+}
+
+.etape-badge.actuel {
+    background-color: #2a0e1e;
+    color: #a64d79;
+    border: 1px solid #a64d79;
+}
+
+.etape-badge.prochain {
+    background-color: #1a1a2e;
+    color: #6699cc;
+    border: 1px solid #6699cc;
+}
+
+.etape-badge.futur {
+    background-color: #0e1a12;
+    color: #4caf78;
+    border: 1px solid #4caf78;
+}
+
+.etape-fleche {
+    display: flex;
+    justify-content: center;
+    margin: -18px auto;
+    width: 50px;
+    position: relative;
+    z-index: 2;
+}
+
+.etape-fleche svg {
+    width: 50px;
+    height: 50px;
+    filter: drop-shadow(0 0 6px #a64d79);
+}
+
+/* --- CANDIDATURES --- */
+.bloc-candidatures {
+    margin-bottom: 60px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grille-candidatures {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.carte-candidature {
+    background-color: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    border-radius: 10px;
+    padding: 16px 20px;
+    width: 200px;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.carte-candidature:hover {
+    transform: translateY(-4px);
+    border-color: #a64d79;
+    box-shadow: 0 6px 20px rgba(166, 77, 121, 0.2);
+}
+
+.carte-candidature.prioritaire {
+    border-left: 3px solid #a64d79;
+}
+
+.candidature-statut {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.candidature-statut.en-cours {
+    color: #a64d79;
+}
+
+.candidature-statut.attente {
+    color: #888;
+}
+
+.candidature-nom {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.candidature-detail {
+    font-size: 0.8rem;
+    color: #666;
+}
+

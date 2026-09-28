@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>TP - GABIN Floralyn</title>
+		<meta charset="UTF-8">
+			<link rel="stylesheet" href="style-commun.css">
+				<link rel="stylesheet" href="tpcss.css">
+</head>
+	<body>
+
+		<header>
+			<div class="header-content">
+				<h1>
+					<a class="aucun-style" href="index.html">GABIN Floralyn</a>
+				</h1>
+				<form class="rechercheforme">
+					<input type="text" placeholder="Recherche..." aria-label="Recherche">
+						<button type="submit" class="btn-recherche">
+							<svg class="recherche-icone" viewBox="0 0 24 24">
+								<path d="M21 19l-4.35-4.35a7.5 7.5 0 1 0-1.65 1.65L19 21l2-2zM10.5 16a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11z" />
+							</svg>
+						</button>
+					</form>
+			</div>
+		</header>
+
+		<nav class="menu2">
+			<ul>
+				<li>
+					<a href="index.html">Accueil</a>
+				</li>
+				<li>
+					<a href="cv.html">CV</a>
+				</li>
+				<li class="deroulant">
+					<a href="#">Projets</a>
+					<ul class="sous-menu">
+						<li>
+							<a href="stage.html">Stages</a>
+						</li>
+						<li>
+							<a href="atelier.html">Atelier Pro</a>
+						</li>
+						<li>
+							<a href="tp.html">TP</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="competences.html">Compétences</a>
+				</li>
+				<li class="deroulant">
+					<a href="#">Veilles</a>
+					<ul class="sous-menu">
+						<li>
+							<a href="technologique.html">Technologique</a>
+						</li>
+						<li>
+							<a href="juridique.html">Juridique</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="ambitions.html">Ambitions</a>
+				</li>
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</nav>
+
+		<main class="contenu-tp">
+			<h2 class="titre-page">Travaux Pratiques</h2>
+			<h3 class="titre-page">BTS SIO 1</h3>
+				<br>
+				<h4 class="titre-page">BLOC 1</h4>
+			<div class="grille-tp">
+				
+				<div class="colonne-tp">
+					<iframe class="pdf-frame" src="Présentation Cryptologue.pptx.pdf"></iframe>
+					<div class="tp-info">
+						<p>Présentation du métier Cryptologue en BLOC 1</p>
+						<button class="btn-action" onclick="ouvrirModal('Présentation Cryptologue.pptx.pdf')">Voir en grand</button>
+					</div>
+				</div>
+
+				<div class="colonne-tp">
+					<iframe class="pdf-frame" src="(Aymen_Floralyn) TP1_ Linux, machines virtuelles.pdf"></iframe>
+					<div class="tp-info">
+						<p>Linux</p>
+						<button class="btn-action" onclick="ouvrirModal('(Aymen_Floralyn) TP1_ Linux, machines virtuelles.pdf')">Voir en grand</button>
+					</div>
+				</div>
+
+				<div class="colonne-tp">
+					<iframe class="pdf-frame" src="Appel doffre - Feuille 1.pdf"></iframe>
+					<div class="tp-info">
+						<p>Appel d'offre</p>
+						<button class="btn-action" onclick="ouvrirModal('Appel doffre - Feuille 1.pdf')">Voir en grand</button>
+					</div>
+				</div>
+			</div>
+			<br>
+			<h4 class="titre-page">BLOC 2</h4>
+			<div class="grille-tp">
+				<div class="colonne-tp">
+					<iframe class="pdf-frame" src="TP6 - Configurer IPv6 .pdf"></iframe>
+					<div class="tp-info">
+						<p>TP6 - Configurer IPv6</p>
+						<button class="btn-action" onclick="ouvrirModal('TP6 - Configurer IPv6 .pdf')">Voir en grand</button>
+						<button class="btn-action" onclick="ouvrirModal('IPV6.png')">Maquette</button>
+				</div>
+				</div>
+				<div class="colonne-tp">
+					<iframe class="pdf-frame" src="(GABIN Floralyn) TP 4 - VLAN .pdf"></iframe>
+					<div class="tp-info">
+						<p>TP4 - VLAN</p>
+						<button class="btn-action" onclick="ouvrirModal('(GABIN Floralyn) TP 4 - VLAN .pdf')">Voir en grand</button>
+				
+						<button class="btn-action" onclick="ouvrirModal('TP4 VLAN.png')">Maquette</button>
+					</div>
+				</div>
+				<div class="colonne-tp">
+					<iframe class="pdf-frame" src="(GABIN Floralyn) TP 3 - Découverte Routage Cisco.pdf"></iframe>
+					<div class="tp-info">
+						<p>Découverte du Routage Cisco Packet Tracer</p>
+						<button class="btn-action" onclick="ouvrirModal('(GABIN Floralyn) TP 3 - Découverte Routage Cisco.pdf')">Voir en grand</button>
+					</div>
+				</div>
+				<div class="colonne-tp">
+					<iframe class="pdf-frame" src="GABIN Floralyn - Construire un réseau avec Packet Tracer.pdf"></iframe>
+					<div class="tp-info">
+						<p>Construire un réseau avec Packet Tracer</p>
+						<button class="btn-action" onclick="ouvrirModal('GABIN Floralyn - Construire un réseau avec Packet Tracer.pdf')">Voir en grand</button>
+					</div>
+				</div>
+				<div class="colonne-tp">
+					<iframe class="pdf-frame" src="Floralyn Protection des pc.pdf"></iframe>
+					<div class="tp-info">
+						<p>Protection des Ordinateurs</p>
+						<button class="btn-action" onclick="ouvrirModal('Floralyn Protection des pc.pdf')">Voir en grand</button>
+					</div>
+				</div>
+			</div>
+<br>
+			<h4 class="titre-page">CYBERSECURITÉ</h4>
+			<div class="grille-tp">
+				<div class="colonne-tp">
+					<iframe class="pdf-frame" src="(Floralyn) TP9 - Sécuriser les équipements USB.pdf"></iframe>
+					<div class="tp-info">
+						<p>TP9 - Sécuriser les équipements USB</p>
+						<button class="btn-action" onclick="ouvrirModal('(Floralyn) TP9 - Sécuriser les équipements USB.pdf')">Voir en grand</button>
+					</div>
+				</div>
+				<div class="colonne-tp">
+					<iframe class="pdf-frame" src="(GABIN Floralyn) TD 8 Identifier les Menaces et mettre en oeuvre les Défenses appropriées.pdf"></iframe>
+					<div class="tp-info">
+						<p>Identifier les menaces et mettre en oeuvre les défenses appropriées</p>
+						<button class="btn-action" onclick="ouvrirModal('(GABIN Floralyn) TD 8 Identifier les Menaces et mettre en oeuvre les Défenses appropriées.pdf')">Voir en grand</button>
+					</div>
+				</div>
+				<div class="colonne-tp">
+					<iframe class="pdf-frame" src="Revue de Presse Cybersécurité _ 5 Articles.pdf"></iframe>
+					<div class="tp-info">
+						<p>Revue de Presse</p>
+						<button class="btn-action" onclick="ouvrirModal('Revue de Presse Cybersécurité _ 5 Articles.pdf')">Voir en grand</button>
+					</div>
+				</div>
+		
+			</div>
+			
+			
+
+			<br>
+			<br>
+           <h3 class="titre-page">BTS SIO 2</h3>
+				<br>
+				<h4 class="titre-page">BLOC 2</h4>
+				<br>
+			<div class="grille-tp">
+				
+				<div class="colonne-tp">
+					<iframe class="pdf-frame" src="COMMANDE Cisco VLAN - configuration sur le terminal du switch.pdf"></iframe>
+					<div class="tp-info">
+						<p>Commandes Cisco (VLAN)</p>
+						<button class="btn-action" onclick="ouvrirModal('COMMANDE Cisco VLAN - configuration sur le terminal du switch.pdf')">Voir en grand</button>
+					</div>
+				</div>
+				<div class="colonne-tp">
+					<iframe class="pdf-frame" src="_(GABIN & DJEFEL) Bloc 2 SISR - Déploiement des infrastructures réseaux.pdf"></iframe>
+					<div class="tp-info">
+						<p>Déploiement des infrastructures réseaux</p>
+						<button class="btn-action" onclick="ouvrirModal('_(GABIN & DJEFEL) Bloc 2 SISR - Déploiement des infrastructures réseaux.pdf')">Voir en grand</button>
+					</div>
+				</div>
+				<div class="colonne-tp">
+					<iframe class="pdf-frame" src="TP1 - AD_Floralyn.pdf"></iframe>
+					<div class="tp-info">
+						<p>TP1 - Active Directory</p>
+						<button class="btn-action" onclick="ouvrirModal('TP1 - AD_Floralyn.pdf')">Voir en grand</button>
+					</div>
+				</div>
+				<div class="colonne-tp">
+					<iframe class="pdf-frame" src="AD.4 GABIN.F.pdf"></iframe>
+					<div class="tp-info">
+						<p>TP - Active Directory 4</p>
+						<button class="btn-action" onclick="ouvrirModal('AD.4 GABIN.F.pdf')">Voir en grand</button>
+					</div>
+				</div>
+				<div class="colonne-tp">
+					<iframe class="pdf-frame" src="TP - Routage HSRP_Floralyn.pdf"></iframe>
+					<div class="tp-info">
+						<p>TP - Routage HSRP (Hot Standby Router Protocol)</p>
+						<button class="btn-action" onclick="ouvrirModal('TP - Routage HSRP_Floralyn.pdf')">Voir en grand</button>
+					</div>
+				</div>
+				<div class="colonne-tp">
+					<iframe class="pdf-frame" src="GABIN_Floralyn NAT_PAT.pdf"></iframe>
+					<div class="tp-info">
+						<p>TP - NAT/PAT</p>
+						<button class="btn-action" onclick="ouvrirModal('GABIN_Floralyn NAT_PAT.pdf')">Voir en grand</button>
+				</div>
+				</div>
+						
+			</div>
+			<br>
+				<h4 class="titre-page">CYBERSECURITÉ</h4>
+			<div class="grille-tp">
+				<div class="colonne-tp">
+					<iframe class="pdf-frame" src="GABIN Floralyn_PC07-A108 Mise à jour des logiciels.xlsx - Sheet1.pdf"></iframe>
+					<div class="tp-info">
+						<p>PC07-A108 Mise à jour des logiciels</p>
+						<button class="btn-action" onclick="ouvrirModal('GABIN Floralyn_PC07-A108 Mise à jour des logiciels.xlsx - Sheet1.pdf')">Voir en grand</button>
+				</div>
+				</div>
+				<div class="colonne-tp">
+					<iframe class="pdf-frame" src="TP3 GABIN.F - Attaque MITM.pdf"></iframe>
+					<div class="tp-info">
+						<p>TP3 - Attaque MITM</p>
+						<button class="btn-action" onclick="ouvrirModal('TP3 GABIN.F - Attaque MITM.pdf')">Voir en grand</button>
+				</div>
+				</div>
+				<div class="colonne-tp">
+					<iframe class="pdf-frame" src="GABIN Floralyn - Amélioration de la sécurité du service OpenSSH sur le serveur.pdf"></iframe>
+					<div class="tp-info">
+						<p>Amélioration de la sécurité du service OpenSSH sur le serveur</p>
+						<button class="btn-action" onclick="ouvrirModal('GABIN Floralyn - Amélioration de la sécurité du service OpenSSH sur le serveur.pdf')">Voir en grand</button>
+				</div>
+				</div>
+		</main>
+
+		<dialog id="modal-lecteur">
+			<button class="fermer-modal" onclick="fermerModal()">×</button>
+			<iframe id="iframe-plein-ecran" src=""></iframe>
+		</dialog>
+
+		<footer class="footer-tp">
+			<p>&copy; 2024-2026 GABIN Floralyn. Tous droits réservés.</p>
+		</footer>
+
+
+		<script>
+			const modal = document.getElementById('modal-lecteur');
+			const iframeGrand = document.getElementById('iframe-plein-ecran');
+
+			function ouvrirModal(url) {
+			iframeGrand.src = url;
+			modal.showModal();
+			}
+
+			function fermerModal() {
+			modal.close();
+			iframeGrand.src = "";
+			}
+		</script>
+
+
+	</body>
+</html>

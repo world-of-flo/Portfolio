@@ -1,0 +1,347 @@
+.smooth {
+    margin-left: 200px;
+    height: 100vh;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: start;
+    padding: 100px 60px;
+}
+
+/* --- NAVIGATION RACCOURCI --- */
+.raccourci {
+    position: fixed;
+    top: 100px;
+    width: calc(100% - 200px);
+    
+    z-index: 80;
+    padding: 20px 0;
+   
+}
+
+.raccourci ul { display: flex; justify-content: center; list-style: none; }
+.raccourci a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.6rem; /* Plus grand */
+    margin: 0 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.raccourci a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #a64d79;
+    transition: 0.3s;
+}
+.raccourci a:hover::after { width: 100%; }
+
+#accueil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 50px;
+}
+
+.accueil-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    width: 100%;
+    gap: 40px;
+}
+
+/* --- Partie Gauche --- */
+.accueil-info {
+    flex: 1;
+    text-align: left;
+}
+
+.titre-lycee {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px rgba(166, 77, 121, 0.5);
+}
+
+.accueil-info p {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+.btn-lycee {
+    display: inline-block;
+    padding: 12px 25px;
+    border: 2px solid #a64d79;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn-lycee:hover {
+    background: #a64d79;
+    box-shadow: 0 0 15px rgba(166, 77, 121, 0.4);
+}
+
+/* --- Partie Droite --- */
+.accueil-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.accueil-image img {
+    width: 100%;
+    max-width: 500px; /* Ajuste selon la qualité de ta photo */
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border: 1px solid #333;
+}
+
+
+/* --- MAQUETTE BIOGRAPHIE (AJUSTÉE) --- */
+.maquette-biographie {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    background-color: #1a1a1a;
+    border: px solid #444;
+    padding: 60px;
+    gap: 60px;
+    align-items: flex-start; /* Aligne le haut du texte et de la photo */
+}
+
+.bio-texte { flex: 2; }
+.bio-texte h2 { font-size: 3.5rem; margin-bottom: 20px; }
+
+.scroll-interne-bio {
+    font-size: 2rem; /* Lecture confortable */
+    line-height: 1.8;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.bio-photo { 
+    flex: 1; 
+    display: flex; 
+    justify-content: center;
+    padding-top: 20px; /* Ajustement précis pour être à hauteur du texte */
+    
+}
+
+.cadre-photo-bio {
+    width: 200px; /* Taille standard photo */
+    height: 260px;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+}
+
+
+
+/* --- SECTION BTS SIO OPTIONS --- */
+
+#btssio {
+    justify-content: flex-start; /* Aligne le contenu vers le haut pour laisser de la place */
+    padding-top: 150px;
+}
+
+.box-presentation {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.grille-options {
+    display: flex;
+    gap: 40px;
+    width: 90%;
+    max-width: 1200px;
+    justify-content: center;
+}
+
+.card-option {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    padding: 40px;
+    border-radius: 15px;
+    flex: 1;
+    transition: 0.3s;
+    position: relative;
+}
+
+
+/* --- Style du titre principal BTS SIO --- */
+.titre-bts {
+    font-size: 5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0;
+    letter-spacing: 5px;
+    /* Effet d'ombre portée pour créer la lueur rose */
+    text-shadow: 
+        0 0 10px rgba(166, 77, 121, 0.8),
+        0 0 20px rgba(166, 77, 121, 0.5),
+        0 0 40px rgba(166, 77, 121, 0.3);
+}
+
+.sous-titre-bts {
+    font-size: 1.5rem;
+    color: #a64d79; /* Rose assorti */
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-top: 5px;
+    font-weight: 300;
+}
+
+/* --- Grille et Cartes --- */
+.grille-options {
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+    width: 90%;
+    max-width: 1100px;
+}
+
+.card-option {
+    background: #111;
+    border: 1px solid #333;
+    padding: 30px;
+    border-radius: 15px;
+    flex: 1;
+    transition: 0.3s;
+}
+
+.card-option ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.card-option li {
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+    color: #ccc;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-option i {
+    color: #a64d79;
+    width: 20px;
+}
+
+/* SISR en avant */
+.sisr-highlight {
+    border: 2px solid #a64d79;
+    box-shadow: 0 0 15px rgba(166, 77, 121, 0.2);
+    transform: scale(1.02); /* Légèrement plus grande */
+}
+
+.badge-selection {
+    background: #a64d79;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+
+/* MISE EN AVANT SISR (Cadre Rose) */
+.sisr-highlight {
+    border: 2px solid #a64d79;
+    box-shadow: 0 0 20px rgba(166, 77, 121, 0.3);
+}
+
+.sisr-highlight h3 {
+    color: #fff;
+    font-size: 3rem;
+    text-shadow: 0 0 10px #a64d79;
+    margin: 0;
+}
+
+/* BADGE "MON CHOIX" */
+.option-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.badge-selection {
+    background-color: #a64d79;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* STYLE SLAM (Gris) */
+.slam-standard {
+    border: 1px solid #444;
+    opacity: 0.8;
+}
+
+.slam-standard h3 {
+    color: #888;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+/* TEXTES INTERNES */
+.option-full-name {
+    color: #a64d79;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.option-desc {
+    color: #ccc;
+    font-size: 1.3rem;
+    line-height: 1.6;
+}
+
+/* Responsive : Empiler les cartes sur petit écran */
+@media (max-width: 900px) {
+    .grille-options {
+        flex-direction: column;
+    }
+}
+
+/* --- CONTACT --- */
+.bulle-contact {
+    background: #111;
+    border: 1px solid #333;
+    padding: 25px 40px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    width: 450px;
+}
+.bulle-contact p { font-size: 1.8rem; }
+.icone-contact { color: #a64d79; font-size: 2.5rem; margin-right: 30px; }

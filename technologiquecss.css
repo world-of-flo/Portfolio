@@ -1,0 +1,242 @@
+/* --- CONFIGURATION GÉNÉRALE --- */
+body {
+    background-color: #000;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: white;
+    font-family: sans-serif;
+}
+
+/* --- ZONE PRINCIPALE (DÉCALÉE DU MENU) --- */
+.contenu-veille {
+    margin-left: 200px;
+    margin-top: 80px;
+    padding: 40px;
+    flex: 1;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #a64d79;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* --- STYLE DU BLOC DE TEXTE --- */
+.carte-info {
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    padding: 30px;
+    border: 1px solid #333;
+    max-width: 900px;
+    line-height: 1.6;
+    margin: 0 auto;
+}
+
+.carte-info h2 {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #a64d79;
+    display: inline-block;
+}
+
+.carte-info p {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.points-cles h3 {
+    color: #a64d79;
+    font-size: 1.6rem;
+}
+
+.points-cles ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.points-cles li {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+
+
+/* ============================================
+   TIMELINE
+   ============================================ */
+
+.bloc-timeline {
+    margin-top: 60px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titre-timeline {
+    font-size: 2rem;
+    color: #a64d79;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.sous-titre-timeline {
+    font-size: 1rem;
+    color: #888;
+    margin-bottom: 40px;
+    letter-spacing: 0.05em;
+}
+
+/* --- CONTENEUR TIMELINE --- */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+}
+
+/* --- ITEM (date + point + carte) --- */
+.timeline-item {
+    display: grid;
+    grid-template-columns: 140px 40px 1fr;
+    align-items: start;
+    width: 100%;
+}
+
+/* --- DATE --- */
+.timeline-date {
+    text-align: right;
+    padding-right: 16px;
+    padding-top: 18px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #a64d79;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+/* --- CONNECTEUR (point + ligne verticale) --- */
+.timeline-connecteur {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100%;
+}
+
+.timeline-point {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #a64d79;
+    border: 2px solid #fff;
+    margin-top: 20px;
+    flex-shrink: 0;
+    box-shadow: 0 0 10px #a64d79aa;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.timeline-item:hover .timeline-point {
+    transform: scale(1.4);
+    box-shadow: 0 0 18px #a64d79;
+}
+
+.timeline-ligne {
+    width: 2px;
+    flex: 1;
+    min-height: 30px;
+    background: linear-gradient(to bottom, #a64d79, #333);
+}
+
+/* --- CARTE --- */
+.timeline-carte {
+    background-color: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    border-left: 3px solid #a64d79;
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 0;
+    margin-left: 10px;
+    margin-top: 10px;
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.timeline-carte:hover {
+    transform: translateX(6px);
+    border-color: #c0608e;
+    box-shadow: 0 4px 20px rgba(166, 77, 121, 0.2);
+}
+
+.carte-illustration {
+    width: 100%;
+    margin-bottom: 16px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.carte-illustration svg {
+    width: 100%;
+    height: auto;
+    max-height: 130px;
+    display: block;
+    overflow: hidden;
+}
+
+.carte-tag {
+    display: inline-block;
+    background-color: #2a0e1e;
+    color: #c0608e;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 3px 10px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.timeline-carte h3 {
+    color: #fff;
+    font-size: 1.1rem;
+    margin: 0 0 10px 0;
+}
+
+.timeline-carte p {
+    color: #ccc;
+    font-size: 0.95rem;
+    line-height: 1.65;
+    margin: 0 0 12px 0;
+}
+
+.carte-source {
+    font-size: 0.8rem;
+    color: #666;
+    font-style: italic;
+}
+
+.carte-source a {
+    color: #a64d79;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.carte-source a:hover {
+    color: #c0608e;
+    text-decoration: underline;
+}
+
+/* --- FLÈCHE ENTRE CARTES --- */
+.timeline-fleche {
+    text-align: center;
+    width: 40px;
+    margin-left: 140px;
+    font-size: 1.4rem;
+    color: #a64d79;
+    line-height: 1;
+    padding: 2px 0;
+    opacity: 0.7;
+}

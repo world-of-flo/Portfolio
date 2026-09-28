@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Stages - GABIN Floralyn</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style-commun.css">
+    <link rel="stylesheet" href="stagecss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1><a class="aucun-style" href="index.html">GABIN Floralyn</a></h1>
+            <form class="rechercheforme">
+                <input type="text" placeholder="Recherche..." aria-label="Recherche">
+                <button type="submit" class="btn-recherche">
+                    <svg class="recherche-icone" viewBox="0 0 24 24">
+                        <path d="M21 19l-4.35-4.35a7.5 7.5 0 1 0-1.65 1.65L19 21l2-2zM10.5 16a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11z" />
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </header>
+
+    <nav class="menu2">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li class="deroulant">
+                <a href="#">Projets</a>
+                <ul class="sous-menu">
+                    <li><a href="stage.html">Stages</a></li>
+                    <li><a href="atelier.html">Atelier Pro</a></li>
+                    <li><a href="tp.html">TP</a></li>
+                </ul>
+            </li>
+            <li><a href="competences.html">Compétences</a></li>
+            <li class="deroulant">
+                <a href="#">Veilles</a>
+                <ul class="sous-menu">
+                    <li><a href="technologique.html">Technologique</a></li>
+                    <li><a href="juridique.html">Juridique</a></li>
+                </ul>
+            </li>
+            <li><a href="ambitions.html">Ambitions</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="contenu-page">
+        <section class="section-stage">
+            <h2 class="titre-page">Mes Expériences en Stage</h2>
+
+            <!-- PRÉSENTATION DE L'ENTREPRISE -->
+            <div class="bloc-entreprise">
+                <!-- CARROUSEL PHOTOS BÂTIMENT -->
+                <div class="carrousel-entreprise">
+                    <div class="slides-entreprise active">
+                        <img src="archives1.jpg" alt="Archives Nationales Pierrefitte - Vue extérieure">
+                    </div>
+                    <div class="slides-entreprise">
+                        <img src="archives3.jpg" alt="Archives Nationales Pierrefitte - Détail architecture">
+                    </div>
+                    <div class="slides-entreprise">
+                        <img src="archives4.jpg" alt="Archives Nationales Pierrefitte - Vue d'ensemble">
+                    </div>
+                    <button class="prev-entreprise" onclick="slideEntreprise(-1)">&#10094;</button>
+                    <button class="next-entreprise" onclick="slideEntreprise(1)">&#10095;</button>
+                    <div class="dots-entreprise">
+                        <span class="dot-entreprise active" onclick="goToSlideEntreprise(0)"></span>
+                        <span class="dot-entreprise" onclick="goToSlideEntreprise(1)"></span>
+                        <span class="dot-entreprise" onclick="goToSlideEntreprise(2)"></span>
+                        <span class="dot-entreprise" onclick="goToSlideEntreprise(3)"></span>
+                    </div>
+                </div>
+                <div class="entreprise-header">
+                    <div class="entreprise-logo-placeholder">AN</div>
+                    <div>
+                        <h3 class="entreprise-nom">Archives Nationales</h3>
+                        <p class="entreprise-localisation">📍 59 rue Guynemer, 93380 Pierrefitte-sur-Seine</p>
+                        <p class="entreprise-type">Établissement public — Ministère de la Culture</p>
+                    </div>
+                </div>
+
+                <p class="entreprise-description">
+                    Créées pendant la Révolution française, les Archives Nationales ont pour mission de collecter, classer, conserver et communiquer les archives des administrations centrales de l'État. Le site de Pierrefitte-sur-Seine, inauguré en 2013, est le plus grand d'Europe : il conserve les archives publiques postérieures à 1789 ainsi que des fonds privés d'intérêt national, sur plus de 350 km linéaires.
+                </p>
+
+                <div class="entreprise-chiffres">
+                    <div class="chiffre-item">
+                        <span class="chiffre-valeur">350 km</span>
+                        <span class="chiffre-label">d'archives conservées</span>
+                    </div>
+                    <div class="chiffre-item">
+                        <span class="chiffre-valeur">2013</span>
+                        <span class="chiffre-label">ouverture du site</span>
+                    </div>
+                    <div class="chiffre-item">
+                        <span class="chiffre-valeur">3 sites</span>
+                        <span class="chiffre-label">Paris · Pierrefitte · Fontainebleau</span>
+                    </div>
+                </div>
+
+                <!-- ÉQUIPE DSI -->
+                <div class="equipe-section">
+                    <h4 class="equipe-titre">Département Informatique — Mon équipe</h4>
+                    <div class="equipe-grille">
+                        <div class="membre-carte">
+                            <div class="membre-icone">👔</div>
+                            <div class="membre-info">
+                                <span class="membre-role">Direction</span>
+                                <span class="membre-poste">Chef du département SI</span>
+                                <span class="membre-nom">Aïssa Lakrib</span>
+                            </div>
+                        </div>
+                        <div class="membre-carte">
+                            <div class="membre-icone">📋</div>
+                            <div class="membre-info">
+                                <span class="membre-role">Encadrement</span>
+                                <span class="membre-poste">Chef de projet</span>
+                                <span class="membre-nom">Alexandre</span>
+                            </div>
+                        </div>
+                        <div class="membre-carte">
+                            <div class="membre-icone">🌐</div>
+                            <div class="membre-info">
+                                <span class="membre-role">Infrastructure</span>
+                                <span class="membre-poste">Administrateur Réseau</span>
+                                <span class="membre-nom">Dimby</span>
+                            </div>
+                        </div>
+                        <div class="membre-carte">
+                            <div class="membre-icone">👨‍💻</div>
+                            <div class="membre-info">
+                                <span class="membre-role">Tuteur de stage</span>
+                                <span class="membre-poste">Technicien Informatique</span>
+                                <span class="membre-nom">Jean-Louis</span>
+                            </div>
+                        </div>
+                        <div class="membre-carte">
+                            <div class="membre-icone">👨‍💻</div>
+                            <div class="membre-info">
+                                <span class="membre-role">Collègue</span>
+                                <span class="membre-poste">Technicien Informatique</span>
+                                <span class="membre-nom">Moussa</span>
+                            </div>
+                        </div>
+                        <div class="membre-carte">
+                            <div class="membre-icone">👩‍💼</div>
+                            <div class="membre-info">
+                                <span class="membre-role">Support administratif</span>
+                                <span class="membre-poste">Secrétaire RH</span>
+                                <span class="membre-nom"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARROUSEL + PDF CÔTE À CÔTE -->
+            <div class="grille-deux-colonnes">
+                <div class="diaporama-container">
+                    <div class="slides fade"><img src="stock.jpg" style="width:100%" alt="Photo de stage"></div>
+                    <div class="slides fade"><img src="ordis.jpg" style="width:100%" alt="Photo de stage"></div>
+                    <div class="slides fade"><img src="cable.jpg" style="width:100%" alt="Photo de stage"></div>
+                    <div class="slides fade"><img src="serveur.jpg" style="width:100%" alt="Photo de stage"></div>
+                    <div class="slides fade"><img src="serveur2.jpg" style="width:100%" alt="Photo de stage"></div>
+                    <div class="slides fade"><img src="imprimante.jpg" style="width:100%" alt="Photo de stage"></div>
+                    <div class="slides fade"><img src="serveur3.jpg" style="width:100%" alt="Photo de stage"></div>
+                    <div class="slides fade"><img src="arman.jpg" style="width:100%" alt="Photo de stage"></div>
+                    <div class="slides fade"><img src="redondance.jpg" style="width:100%" alt="Photo de stage"></div>
+                    <div class="slides fade"><img src="intervention.jpg" style="width:100%" alt="Photo de stage"></div>
+                    <div class="slides fade"><img src="masterisation.jpg" style="width:100%" alt="Photo de stage"></div>
+                    <div class="slides fade"><img src="ecran.jpg" style="width:100%" alt="Photo de stage"></div>
+                    <div class="slides fade"><img src="clavier.jpg" style="width:100%" alt="Photo de stage"></div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+
+                <div class="bloc-experience">
+                    <h3 style="color: white; font-size: 2rem; margin-bottom: 20px;">Documents & Rapports</h3>
+                    <div class="visionneuse" style="background-color: white; padding: 10px; border-radius: 8px;">
+                        <iframe src="Recueil des tâches Stage 2.pdf" width="100%" height="370px" style="border: none;">
+                            <a href="Recueil des tâches Stage 2.pdf">Cliquez ici pour l'ouvrir.</a>
+                        </iframe>
+                        <button class="btn-action" onclick="ouvrirModal('Recueil des tâches Stage 2.pdf')">Voir en grand</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DEBRIEFS CÔTE À CÔTE -->
+            <div class="grille-deux-colonnes">
+                <div class="bloc-experience">
+                    <p class="page">
+                        <strong>Janvier-Février 2026 :</strong> Stage de BTS SIO 2 des <strong>Archives Nationales</strong>.
+                    </p>
+                    <ul class="liste-taches">
+                        <li>Support technique : Résolution d'incidents à distance (VNC Viewer) et maintenance du parc informatique.</li>
+                        <li>Administration système (AD) : Création de nouveaux comptes utilisateurs et gestion des droits d'accès.</li>
+                        <li>Déploiement et imagerie : Mise en place d'un module kiosque, masterisation et déploiement de postes via Clonezilla.</li>
+                    </ul>
+                </div>
+
+                <div class="bloc-experience">
+                    <p class="page">
+                        <strong>Mai-Juin 2025 :</strong> Stage de BTS SIO 1 des <strong>Archives Nationales</strong>.
+                    </p>
+                    <ul class="liste-taches">
+                        <li>Support technique : Assistance aux utilisateurs et résolution d'incidents.</li>
+                        <li>Configuration matérielle : Installation, préparation et configuration de postes de travail selon les procédures.</li>
+                        <li>Documentation : Rédaction de procédures techniques pour le suivi du parc informatique.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <dialog id="modal-lecteur">
+        <button class="fermer-modal" onclick="fermerModal()">×</button>
+        <iframe id="iframe-plein-ecran" src=""></iframe>
+    </dialog>
+
+    <footer>
+        <p>&copy; 2024-2026 GABIN Floralyn. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        let slideEntrepriseIndex = 0;
+
+        function slideEntreprise(n) {
+            goToSlideEntreprise(slideEntrepriseIndex + n);
+        }
+
+        function goToSlideEntreprise(n) {
+            const slides = document.querySelectorAll('.slides-entreprise');
+            const dots = document.querySelectorAll('.dot-entreprise');
+            slideEntrepriseIndex = (n + slides.length) % slides.length;
+            slides.forEach(s => s.classList.remove('active'));
+            dots.forEach(d => d.classList.remove('active'));
+            slides[slideEntrepriseIndex].classList.add('active');
+            dots[slideEntrepriseIndex].classList.add('active');
+        }
+
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slides");
+            if (n > slides.length) { slideIndex = 1; }
+            if (n < 1) { slideIndex = slides.length; }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+
+        const modal = document.getElementById('modal-lecteur');
+        const iframeGrand = document.getElementById('iframe-plein-ecran');
+
+        function ouvrirModal(url) {
+            iframeGrand.src = url;
+            modal.showModal();
+        }
+
+        function fermerModal() {
+            modal.close();
+            iframeGrand.src = "";
+        }
+    </script>
+
+</body>
+</html>

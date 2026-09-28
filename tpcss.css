@@ -1,0 +1,98 @@
+/* --- LAYOUT GÉNÉRAL --- */
+body {
+    background-color: #1d1e22;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.contenu-tp {
+    margin-left: 200px; /* Espace menu */
+    margin-top: 100px;  /* Espace header */
+    padding: 40px;
+    flex: 1;
+}
+
+.titre-page {
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+/* --- GRILLE 3 COLONNES --- */
+.grille-tp {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes égales */
+    gap: 40px;
+    max-width: 2200px;
+    margin: 0 auto;
+}
+
+.colonne-tp {
+    background-color: #2a2b30;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.pdf-frame {
+    width: 100%;
+    height: 350px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.tp-info {
+    text-align: center;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px;
+    width: 100%;
+    max-width: 900px;
+    margin-bottom: 40px;
+}
+
+.tp-info p {
+    font-size: 1.4rem;
+    color: #ccc;
+    height: 45px; /* Aligne les textes si l'un est plus long */
+}
+
+.btn-action {
+    color: #a64d79;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border: 1px solid #a64d79;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn-action:hover {
+    background-color: #a64d79;
+    color: white;
+}
+
+/* --- FENÊTRE PLEIN ÉCRAN --- */
+dialog {
+    width: 85vw; height: 90vh; margin: auto;
+    border: none; border-radius: 10px; background-color: #222;
+}
+dialog::backdrop { background-color: rgba(0, 0, 0, 0.85); }
+#iframe-plein-ecran { width: 100%; height: 100%; border: none; }
+.fermer-modal {
+    position: absolute; top: 10px; right: 20px;
+    font-size: 4rem; color: white; background: none; border: none; cursor: pointer;
+}
+
+

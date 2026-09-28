@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>CV - GABIN Floralyn</title>
+		<meta charset="UTF-8">
+			<link rel="stylesheet" href="cvcss.css">
+				<link rel="stylesheet" href="style-commun.css">
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+	<body>
+
+		<header>
+			<div class="header-content">
+				<h1>
+					<a class="aucun-style" href="index.html">GABIN Floralyn</a>
+				</h1>
+				<form class="rechercheforme">
+					<input type="text" placeholder="Recherche..." aria-label="Recherche">
+						<button type="submit" class="btn-recherche">
+							<svg class="recherche-icone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+								<path d="M21 19l-4.35-4.35a7.5 7.5 0 1 0-1.65 1.65L19 21l2-2zM10.5 16a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11z" />
+							</svg>
+						</button>
+					</form>
+			</div>
+		</header>
+
+		<nav class="menu2">
+			<ul>
+				<li>
+					<a href="index.html">Accueil</a>
+				</li>
+				<li>
+					<a href="cv.html">CV</a>
+				</li>
+				<li class="deroulant">
+					<a href="#">Projets</a>
+					<ul class="sous-menu">
+						<li>
+							<a href="stage.html">Stages</a>
+						</li>
+						<li>
+							<a href="atelier.html">Atelier Pro</a>
+						</li>
+						<li>
+							<a href="tp.html">TP</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="competences.html">Compétences</a>
+				</li>
+				<li class="deroulant">
+					<a href="#">Veilles</a>
+					<ul class="sous-menu">
+						<li>
+							<a href="technologique.html">Technologique</a>
+						</li>
+						<li>
+							<a href="juridique.html">Juridique</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="ambitions.html">Ambitions</a>
+				</li>
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</nav>
+
+		<main>
+			<div class="aligne">
+				<div class="colonne">
+					<iframe class="pdf" src="CV candidature L3 GABIN Floralyn.pdf"></iframe>
+					<button class="btn-action" onclick="ouvrirModal('CV candidature L3 GABIN Floralyn.pdf')">Voir en grand</button>
+				</div>
+				<div class="colonne">
+					<iframe class="pdf" src="CV 3Licence GABIN Floralyn.pdf"></iframe>
+					<button class="btn-action" onclick="ouvrirModal('CV 3Licence GABIN Floralyn.pdf')">Voir en grand</button>
+				</div>
+				<div class="colonne">
+					<iframe class="pdf" src="Lettre de Motivation L3.pdf"></iframe>
+					<button class="btn-action" onclick="ouvrirModal('Lettre de Motivation L3.pdf')">Voir en grand</button>
+				</div>
+			</div>
+		</main>
+
+		<dialog id="modal-lecteur">
+			<button class="fermer-modal" onclick="fermerModal()">×</button>
+			<iframe id="iframe-plein-ecran" src=""></iframe>
+		</dialog>
+
+		<footer>
+			<p>&copy; 2024-2026 GABIN Floralyn. Tous droits réservés.</p>
+		</footer>
+
+		<script>
+			const modal = document.getElementById('modal-lecteur');
+			const iframeGrand = document.getElementById('iframe-plein-ecran');
+
+			function ouvrirModal(url) {
+			iframeGrand.src = url;
+			modal.showModal();
+			}
+
+			function fermerModal() {
+			modal.close();
+			iframeGrand.src = "";
+			}
+		</script>
+
+	</body>
+</html>

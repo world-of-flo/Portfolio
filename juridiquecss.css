@@ -1,0 +1,133 @@
+/* --- CONFIGURATION GÉNÉRALE --- */
+body {
+    background-color: #000;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: white;
+    font-family: sans-serif;
+}
+
+/* --- ZONE PRINCIPALE (DÉCALÉE DU MENU) --- */
+.contenu-veille {
+    margin-left: 200px; 
+    margin-top: 80px;   
+    padding: 40px;
+    flex: 1; 
+}
+
+h1 {
+    font-size: 3rem;
+    color: #a64d79;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* --- STYLE DU BLOC DE TEXTE (IDENTIQUE À TECHNOLOGIE) --- */
+.carte-info {
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    padding: 30px;
+    border: 1px solid #333;
+    max-width: 900px;
+    line-height: 1.6;
+    margin: 0 auto;
+}
+
+.carte-info h2 {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #a64d79;
+    display: inline-block;
+}
+
+.carte-info p {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.points-cles h3 {
+    color: #a64d79;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.points-cles ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.points-cles li {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+/* --- FOOTER CARRÉ --- */
+.footer-veille {
+    width: calc(100% - 200px);
+    margin-left: 200px;
+    background-color: #0c1616;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #333;
+}
+
+/* --- MISE EN PAGE --- */
+.contenu-juridique {
+    margin-left: 200px;
+    margin-top: 100px;
+    padding: 40px;
+    flex: 1;
+}
+
+.titre-juridique {
+    font-size: 3rem;
+    color: #a64d79;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* --- BLOC DE TEXTE (Style "Attribué") --- */
+.bloc-texte-juridique {
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    padding: 30px;
+    border: 1px solid #333;
+    max-width: 900px;
+    line-height: 1.7;
+    margin: 0 auto;
+}
+
+.bloc-texte-juridique h2 {
+    border-left: 4px solid #a64d79;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+.bloc-texte-juridique p {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.focus-juridique ul {
+    list-style: none;
+    padding: 0;
+}
+
+.focus-juridique li {
+    font-size: 1.3rem;
+    padding-left: 25px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.focus-juridique li::before {
+    content: "⚖️";
+    position: absolute;
+    left: 0;
+}

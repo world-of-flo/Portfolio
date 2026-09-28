@@ -1,0 +1,136 @@
+/* --- FOND ANIMÉ --- */
+body {
+    background: url('backgroundimage.jpeg') repeat;
+    background-size: cover;
+    animation: move-background 30s linear infinite;
+}
+
+@keyframes move-background {
+    from { background-position: 0 0; }
+    to   { background-position: 100% 0; }
+}
+
+/* --- ZONE PRINCIPALE --- */
+.contenu-amd {
+    margin-left: 200px;
+    margin-top: 100px;
+    padding: 40px;
+    flex: 1;
+}
+
+/* --- TITRES --- */
+.titre-amd {
+    font-size: 3rem;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.nom {
+    color: #a64d79;
+    text-transform: uppercase;
+}
+
+.sous-titre-amd {
+    color: #ccc;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-left: 0;
+}
+
+/* --- GRILLE 3 COLONNES --- */
+.image-colonnes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: stretch;
+}
+
+/* --- CARTE IMAGE --- */
+.ligneimg {
+    text-align: center;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    background-color: rgba(0, 0, 0, 0.35);
+    border-radius: 16px;
+    border: 1px solid rgba(166, 77, 121, 0.3);
+    transition: border-color 0.3s ease, transform 0.3s ease;
+    height: 100%;
+}
+
+.ligneimg:hover {
+    border-color: #a64d79;
+    transform: translateY(-4px);
+}
+
+/* --- IMAGE --- */
+.rotation {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    background-color: black;
+    box-shadow: 0 4px 16px rgba(166, 77, 121, 0.3);
+    display: block;
+    margin: 0 auto;
+}
+
+.petite-image {
+    max-width: 350px;
+    height: auto;
+    object-fit: cover;
+}
+
+/* --- ANIMATION ROTATION AU SURVOL --- */
+.image-rotation:hover .rotation {
+    animation: rotation 2s forwards;
+}
+
+@keyframes rotation {
+    0%   { transform: rotateY(0deg); }
+    50%  { transform: rotateY(360deg); }
+    100% { transform: rotateY(0deg); }
+}
+
+/* --- PARAGRAPHE SOUS IMAGE --- */
+.paragraphe {
+    background-color: transparent;
+    padding: 12px 16px;
+    border-radius: 10px;
+    border-left: 3px solid #a64d79;
+    width: 100%;
+    max-width: 320px;
+    text-align: left;
+    font-size: 1.3rem;
+    color: #e0e0e0;
+    line-height: 1.6;
+    flex: 1;
+}
+
+/* --- LIEN AMD --- */
+.box1 {
+    display: inline-block;
+    padding: 12px 28px;
+    border: 2px solid #a64d79;
+    border-radius: 30px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 1.4rem;
+    transition: 0.3s ease;
+    background-color: transparent;
+    letter-spacing: 0.05em;
+}
+
+.box1:hover {
+    background-color: #a64d79;
+    color: white;
+    box-shadow: 0 0 16px rgba(166, 77, 121, 0.5);
+}

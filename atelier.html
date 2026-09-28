@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Ateliers Pro - GABIN Floralyn</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="ateliercss.css">
+		<link rel="stylesheet" href="style-commun.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1><a class="aucun-style" href="index.html">GABIN Floralyn</a></h1>
+            <form class="rechercheforme">
+                <input type="text" placeholder="Recherche..." aria-label="Recherche">
+                <button type="submit" class="btn-recherche">
+                    <svg class="recherche-icone" viewBox="0 0 24 24">
+                        <path d="M21 19l-4.35-4.35a7.5 7.5 0 1 0-1.65 1.65L19 21l2-2zM10.5 16a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11z" />
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </header>
+
+	<nav class="menu2">
+		<ul>
+			<li>
+				<a href="index.html">Accueil</a>
+			</li>
+			<li>
+				<a href="cv.html">CV</a>
+			</li>
+			<li class="deroulant">
+				<a href="#">Projets</a>
+				<ul class="sous-menu">
+					<li>
+						<a href="stage.html">Stages</a>
+					</li>
+					<li>
+						<a href="atelier.html">Atelier Pro</a>
+					</li>
+					<li>
+						<a href="tp.html">TP</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="competences.html">Compétences</a>
+			</li>
+			<li class="deroulant">
+				<a href="#">Veilles</a>
+				<ul class="sous-menu">
+					<li>
+						<a href="technologique.html">Technologique</a>
+					</li>
+					<li>
+						<a href="juridique.html">Juridique</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="ambitions.html">Ambitions</a>
+			</li>
+			<li>
+				<a href="contact.html">Contact</a>
+			</li>
+		</ul>
+	</nav>
+
+    <main class="contenu-atelier">
+        <h2 class="titre-page">Ateliers Professionnels</h2>
+
+        <div class="projet-card">
+            <h3>Site Vitrine AMD Ryzen</h3>
+            <a href="AMD.html.html" class="btn-lien">Consulter le site vitrine</a>
+        </div>
+
+		<h3 class="titre-page">BTS SIO 1</h3>
+		<div class="grille-atelier">
+
+        <div class="projet-card">
+            <h3>Virtualbox</h3>
+            <iframe src="Projet 4  Floralyn Youssef Virtualisation.docx.pdf" frameborder="0"></iframe>
+        <button class="btn-action" onclick="ouvrirModal('Projet 4  Floralyn Youssef Virtualisation.docx.pdf')">Voir en grand</button>
+				
+		</div>
+
+        <div class="projet-card">
+            <h3>Présentation d'un métier (Intégrateur Web)</h3>
+            <iframe src="Projet 3 - Métier Intégrateur Web GABINFloralyn&PopuloKylian.pptx.pdf" frameborder="0"></iframe>
+        <button class="btn-action" onclick="ouvrirModal('Projet 3 - Métier Intégrateur Web GABINFloralyn&PopuloKylian.pptx.pdf')">Voir en grand</button>
+		</div>
+
+        <div class="projet-card">
+            <h3>Documentation Unité centrale</h3>
+            <iframe src="(Floralyn,Florian,Axel) Atelier PRO - Documentation Unité centrale .pdf" frameborder="0"></iframe>
+        <button class="btn-action" onclick="ouvrirModal('(Floralyn,Florian,Axel) Atelier PRO - Documentation Unité centrale .pdf')">Voir en grand</button>
+				
+		</div>
+		<div class="projet-card">
+            <h3>Clé Bootable</h3>
+            <iframe src="TP 6 _ Documentation de la clé Bootable et installation d’un système d’exploitation.pdf" frameborder="0"></iframe>
+       
+<button class="btn-action" onclick="ouvrirModal('TP 6 _ Documentation de la clé Bootable et installation d’un système d’exploitation.pdf')">Voir en grand</button>
+						</div>
+		<div class="projet-card">
+            <h3>Parc Matériel</h3>
+            <iframe src="GABIN Floralyn - Parc Matériel.pptx.pdf" frameborder="0"></iframe>
+        <button class="btn-action" onclick="ouvrirModal('GABIN Floralyn - Parc Matériel.pptx.pdf')">Voir en grand</button>
+				
+		</div>
+		<div class="projet-card">
+            <h3>Projet 3 - Configuration d'un réseau Serveur et Clients</h3>
+            <iframe src="AP Projet 3 - .pdf" frameborder="0"></iframe>
+        <button class="btn-action" onclick="ouvrirModal('AP Projet 3 - .pdf')">Voir en grand</button>
+				
+		</div>
+		<div class="projet-card">
+            <h3>Veille Technologique Cybersécurité</h3>
+            <iframe src="Projet 5 - Veille Technologique Cybersécurité.pptx.pdf" frameborder="0"></iframe>
+        <button class="btn-action" onclick="ouvrirModal('Projet 5 - Veille Technologique Cybersécurité.pptx.pdf')">Voir en grand</button>
+				
+		</div>
+
+		</div>
+
+		<h3 class="titre-page">BTS SIO 2</h3>
+		<div class="grille-atelier">
+
+        <div class="projet-card">
+            <h3>GSB 2</h3>
+            <iframe src="GSB prt2 (Floralyn, Lazar, Idriss).pdf" frameborder="0"></iframe>
+        <button class="btn-action" onclick="ouvrirModal('GSB prt2 (Floralyn, Lazar, Idriss).pdf')">Voir en grand</button>
+				
+		</div>
+
+        
+		</div>
+	</main>
+
+	<dialog id="modal-lecteur">
+			<button class="fermer-modal" onclick="fermerModal()">×</button>
+			<iframe id="iframe-plein-ecran" src=""></iframe>
+		</dialog>
+        <footer>
+            <p>&copy; 2024-2026 GABIN Floralyn. Tous droits réservés.</p>
+        </footer>
+
+
+		<script>
+			const modal = document.getElementById('modal-lecteur');
+			const iframeGrand = document.getElementById('iframe-plein-ecran');
+
+			function ouvrirModal(url) {
+			iframeGrand.src = url;
+			modal.showModal();
+			}
+
+			function fermerModal() {
+			modal.close();
+			iframeGrand.src = "";
+			}
+		</script>
+    
+
+</body>
+</html>

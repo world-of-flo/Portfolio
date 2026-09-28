@@ -1,0 +1,154 @@
+/* --- CONFIGURATION SCROLL SNAP --- */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #000;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.snap-container {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    margin-left: 200px;
+}
+
+.snap-section {
+    height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+/* --- SECTION 1 : GRILLE --- */
+.grille-competences {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.titre-page {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    background-image: linear-gradient(90deg, #d23ea3 0%, #b843d1 50%, #ccd1cd 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow:
+        0px 0px 10px rgba(210, 62, 163, 0.8),
+        0px 0px 20px rgba(184, 67, 209, 0.6),
+        0px 0px 30px rgba(255, 255, 255, 0.4);
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
+    margin-top: 40px;
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+.card-competence {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    padding: 25px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.card-competence:hover { border-color: #a64d79; transform: translateY(-5px); }
+.card-competence h3 { border-left: 4px solid #a64d79; padding-left: 10px; color: #fff; font-size: 1.8rem; }
+.card-competence ul { list-style: none; padding: 0; color: #ccc; font-size: 1.1rem; }
+
+/* --- SECTION 2 : TABLEAU --- */
+.conteneur-tableau {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    border: 1px solid #333;
+    overflow-y: auto;
+    max-height: 55vh;
+}
+
+.tableau-missions { width: 100%; border-collapse: collapse; color: white; }
+.tableau-missions th { background-color: #a64d79; padding: 15px; text-align: left; font-size: 1.5rem; }
+.tableau-missions td { padding: 15px; border-bottom: 1px solid #333; font-size: 1.5rem; vertical-align: top; }
+
+/* --- BOUTONS LIENS TABLEAU --- */
+.btn-table {
+    display: inline-block;
+    padding: 8px 12px;
+    border: 1px solid #a64d79;
+    color: #a64d79;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    white-space: normal;
+    word-break: break-word;
+    line-height: 1.5;
+}
+
+.btn-table:hover { background: #a64d79; color: white; }
+
+/* --- INDICATEUR SCROLL --- */
+.indic-scroll {
+    text-align: center;
+    margin-top: 40px;
+    color: #a64d79;
+    animation: bounce 2s infinite;
+    font-size: 1rem;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-10px);}
+}
+
+/* --- SECTION 3 : CERTIFICATS & MODAL --- */
+.aligne { display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; }
+.colonne { text-align: center; width: 350px; }
+.pdf { width: 100%; height: 300px; border: 1px solid #333; margin-bottom: 15px; border-radius: 8px; }
+
+.btn-action {
+    background-color: transparent;
+    color: #a64d79;
+    border: 2px solid #a64d79;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-action:hover { background-color: #a64d79; color: white; }
+
+/* FENÊTRE PLEIN ÉCRAN */
+dialog {
+    width: 85vw; height: 90vh; margin: auto;
+    border: none; border-radius: 10px; background-color: #222;
+    padding: 0; overflow: hidden;
+}
+
+dialog::backdrop { background-color: rgba(0, 0, 0, 0.9); }
+#iframe-plein-ecran { width: 100%; height: 100%; border: none; }
+
+.fermer-modal {
+    position: absolute; top: 10px; right: 20px;
+    font-size: 3rem; color: white; background: none; border: none; cursor: pointer;
+    z-index: 100;
+}
+
+.footer-competences {
+    width: calc(100% - 200px);
+    margin-left: 200px;
+    background-color: #0c1616;
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+}
