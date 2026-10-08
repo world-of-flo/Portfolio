@@ -9,43 +9,42 @@
 	<body>
 
 		<header>
-			<div class="header-content">
-				<h1>
-					<a class="aucun-style" href="index.html">GABIN Floralyn</a>
-				</h1>
-				<form class="rechercheforme">
-					<input type="text" placeholder="Recherche..." aria-label="Recherche">
-						<button type="submit" class="btn-recherche">
-							<svg class="recherche-icone" viewBox="0 0 24 24">
-								<path d="M21 19l-4.35-4.35a7.5 7.5 0 1 0-1.65 1.65L19 21l2-2zM10.5 16a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11z" />
-							</svg>
-						</button>
-					</form>
-			</div>
-		</header>
+        <div class="header-content">
+            <h1><a class="aucun-style" href="index.html">GABIN Floralyn</a></h1>
+            <form class="rechercheforme" id="searchForm">
+                <input type="text" id="searchInput" placeholder="Recherche..." aria-label="Recherche">
+                <button type="submit" class="btn-recherche">
+                    <svg class="recherche-icone" viewBox="0 0 24 24">
+                        <path d="M21 19l-4.35-4.35a7.5 7.5 0 1 0-1.65 1.65L19 21l2-2zM10.5 16a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11z" />
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </header>
 
 		<nav class="menu2">
 			<ul>
-				<li><a href="index.html">Accueil</a></li>
-				<li><a href="cv.html">CV</a></li>
-				<li class="deroulant">
-					<a href="#">Projets</a>
-					<ul class="sous-menu">
-						<li><a href="stage.html">Stages</a></li>
-						<li><a href="atelier.html">Atelier Pro</a></li>
-						<li><a href="tp.html">TP</a></li>
-					</ul>
+				<li>
+					<a href="index.html">Accueil</a>
 				</li>
-				<li><a href="competences.html">Compétences</a></li>
-				<li class="deroulant">
-					<a href="#">Veilles</a>
-					<ul class="sous-menu">
-						<li><a href="technologique.html">Technologique</a></li>
-						<li><a href="juridique.html">Juridique</a></li>
-					</ul>
+
+                <li>
+                    <a href="stage.html">Stages</a>
+                </li>
+                <li>
+                    <a href="atelier.html">Atelier Pro</a>
+                </li>
+                <li>
+                    <a href="tp.html">TP</a>
+                </li>
+									
+	            <li><a href="competences.html">Compétences</a></li>
+				<li>
+					<a href="technologique.html">Veille Technologique</a>
 				</li>
-				<li><a href="ambitions.html">Ambitions</a></li>
-				<li><a href="contact.html">Contact</a></li>
+				<li>
+					<a href="juridique.html">Veille Juridique</a>
+				</li>
 			</ul>
 		</nav>
 
@@ -328,6 +327,6 @@
 		<footer class="footer-veille">
 			<p>&copy; 2024-2026 GABIN Floralyn. Tous droits réservés.</p>
 		</footer>
-
+<script src="recherche.js"></script>
 	</body>
 </html>

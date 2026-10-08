@@ -8,62 +8,45 @@
 </head>
 <body>
 
-    <header>
-        <div class="header-content">
-            <h1><a class="aucun-style" href="index.html">GABIN Floralyn</a></h1>
-            <form class="rechercheforme">
-                <input type="text" placeholder="Recherche..." aria-label="Recherche">
-                <button type="submit" class="btn-recherche">
-                    <svg class="recherche-icone" viewBox="0 0 24 24">
-                        <path d="M21 19l-4.35-4.35a7.5 7.5 0 1 0-1.65 1.65L19 21l2-2zM10.5 16a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11z" />
-                    </svg>
-                </button>
-            </form>
-        </div>
-    </header>
+   <header>
+    <div class="header-content">
+        <h1><a class="aucun-style" href="index.html">GABIN Floralyn</a></h1>
+        <form class="rechercheforme" id="searchForm">
+            <input type="text" id="searchInput" placeholder="Recherche..." aria-label="Recherche">
+            <button type="submit" class="btn-recherche">
+                <svg class="recherche-icone" viewBox="0 0 24 24">
+                    <path d="M21 19l-4.35-4.35a7.5 7.5 0 1 0-1.65 1.65L19 21l2-2zM10.5 16a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11z" />
+                </svg>
+            </button>
+        </form>
+    </div>
+</header>
 
     <nav class="menu2">
         <ul>
             <li><a href="index.html">Accueil</a></li>
             <li><a href="cv.html">CV</a></li>
-            <li class="deroulant">
-                <a href="#">Projets</a>
-                <ul class="sous-menu">
-                    <li><a href="stage.html">Stages</a></li>
-                    <li><a href="atelier.html">Atelier Pro</a></li>
-                    <li><a href="tp.html">TP</a></li>
-                </ul>
-            </li>
-            <li><a href="competences.html">Compétences</a></li>
-            <li class="deroulant">
-                <a href="#">Veilles</a>
-                <ul class="sous-menu">
-                    <li><a href="technologique.html">Technologique</a></li>
-                    <li><a href="juridique.html">Juridique</a></li>
-                </ul>
-            </li>
+
+           <li><a href="projet.html">Projet BTS</a></li>
+
             <li><a href="ambitions.html">Ambitions</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 
-    <main class="zone-ambitions">
+   <main class="zone-ambitions">
         <h2 class="titre-page">Mes Ambitions</h2>
 
         <!-- CITATION -->
         <div class="bloc-citation">
             <p>
-                "Le BTS SIO est le tremplin qui me permet de transformer ma passion pour l'informatique en une expertise technique.
+                "Depuis le lycée jusqu'à aujourd'hui, je transforme ma passion pour l'informatique en une expertise technique solide.
                 Mon ambition : sécuriser les infrastructures de demain et devenir une actrice clé de la transformation numérique."
             </p>
         </div>
 
         <!-- CARTES EXISTANTES -->
         <div class="grille-ambitions">
-            <div class="carte-ambition">
-                <h3>Formation</h3>
-                <p>Poursuite d'études en Licence Professionnelle ou en L3 Informatique, avant d'intégrer une école d'ingénieur spécialisée en cybersécurité.</p>
-            </div>
             <div class="carte-ambition">
                 <h3>Expertise</h3>
                 <p>Maîtriser les technologies cloud, les protocoles réseau avancés et les stratégies de défense contre les cybermenaces.</p>
@@ -76,13 +59,30 @@
 
         <!-- PARCOURS VISÉ -->
         <div class="bloc-parcours">
-            <h3 class="titre-section">Mon parcours visé</h3>
+            <h3 class="titre-section">Mon parcours</h3>
             <div class="parcours-etapes">
 
-                <div class="etape etape-actuelle">
+                <!-- Étape 1 : L1 -->
+                <div class="etape">
+                    <div class="etape-icone">📘</div>
+                    <div class="etape-contenu">
+                        <span class="etape-badge prochain">Réorientation</span>
+                        <h4>L1 Informatique, Sciences Exactes et Naturelles</h4>
+                        <p>Acquisition des bases scientifiques et universitaires initiales.</p>
+                    </div>
+                </div>
+
+                <div class="etape-fleche">
+                    <svg viewBox="0 0 40 50" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="20" y1="0" x2="20" y2="36" stroke="#a64d79" stroke-width="6" stroke-linecap="round"/>
+                        <polygon points="2,28 20,50 38,28" fill="#a64d79"/>
+                    </svg>
+                </div>
+
+                <div class="etape">
                     <div class="etape-icone">🎓</div>
                     <div class="etape-contenu">
-                        <span class="etape-badge actuel">En cours</span>
+                        <span class="etape-badge actuel">Diplômée</span>
                         <h4>BTS SIO — Option SISR</h4>
                         <p>Réseaux, systèmes et sécurité informatique. Deux ans de formation alternant cours théoriques et stages en entreprise.</p>
                     </div>
@@ -95,12 +95,12 @@
                     </svg>
                 </div>
 
-                <div class="etape">
+                <div class="etape etape-actuelle">
                     <div class="etape-icone">📚</div>
                     <div class="etape-contenu">
-                        <span class="etape-badge prochain">Prochain objectif</span>
-                        <h4>L3 Informatique ou L3 Pro Réseaux</h4>
-                        <p>Consolider les bases théoriques en informatique, algorithmique et systèmes pour préparer l'entrée en école d'ingénieur.</p>
+                        <span class="etape-badge actuel">En cours</span>
+                        <h4>L3 Informatique</h4>
+                        <p>Consolider les bases en développement, réseaux et cybersécurité en informatique pour préparer l'entrée en école d'ingénieur.</p>
                     </div>
                 </div>
 
@@ -122,75 +122,12 @@
 
             </div>
         </div>
-
-        <!-- CANDIDATURES EN COURS -->
-        <div class="bloc-candidatures">
-            <h3 class="titre-section">Candidatures en cours</h3>
-            <p class="sous-titre-section">Universités d'Île-de-France — L3 Informatique · Session 2025</p>
-            <div class="grille-candidatures">
-
-                <a href="https://ecandidat.univ-paris8.fr/candidatureP8/#!accueilView" target="_blank" rel="noopener" class="carte-candidature prioritaire">
-                    <div class="candidature-statut en-cours">Candidaté ✓</div>
-                    <div class="candidature-nom">Université Paris 8</div>
-                    <div class="candidature-detail">Vincennes-Saint-Denis</div>
-                </a>
-
-                <a href="https://candidatures-2025.sorbonne-universite.fr/" target="_blank" rel="noopener" class="carte-candidature">
-                    <div class="candidature-statut attente">En attente</div>
-                    <div class="candidature-nom">Sorbonne Université</div>
-                    <div class="candidature-detail">Paris 4 / Paris 6</div>
-                </a>
-
-                <a href="https://ecandidat.univ-paris13.fr/ecandidat/#!accueilView" target="_blank" rel="noopener" class="carte-candidature">
-                    <div class="candidature-statut attente">En attente</div>
-                    <div class="candidature-nom">Paris 13</div>
-                    <div class="candidature-detail">Sorbonne Paris Nord</div>
-                </a>
-
-                <a href="https://ecandidat.cyu.fr/#!accueilView" target="_blank" rel="noopener" class="carte-candidature">
-                    <div class="candidature-statut attente">En attente</div>
-                    <div class="candidature-nom">CY Cergy Paris</div>
-                    <div class="candidature-detail">Université Cergy-Pontoise</div>
-                </a>
-
-                <a href="https://ecandidat.app.u-pariscite.fr/sciences1/#!erreurView" target="_blank" rel="noopener" class="carte-candidature">
-                    <div class="candidature-statut attente">En attente</div>
-                    <div class="candidature-nom">Université Paris Cité</div>
-                    <div class="candidature-detail">Ex Paris Descartes / Diderot</div>
-                </a>
-
-                <a href="https://candidatures.u-pec.fr/ecandidat/#!accueilView" target="_blank" rel="noopener" class="carte-candidature">
-                    <div class="candidature-statut attente">En attente</div>
-                    <div class="candidature-nom">UPEC</div>
-                    <div class="candidature-detail">Paris-Est Créteil</div>
-                </a>
-
-                <a href="https://ecandidat.parisnanterre.fr/#!accueilView" target="_blank" rel="noopener" class="carte-candidature">
-                    <div class="candidature-statut attente">En attente</div>
-                    <div class="candidature-nom">Paris Nanterre</div>
-                    <div class="candidature-detail">Université Paris Nanterre</div>
-                </a>
-
-                <a href="https://ecandidat.universite-paris-saclay.fr/ecandidat/#!erreurView" target="_blank" rel="noopener" class="carte-candidature">
-                    <div class="candidature-statut attente">En attente</div>
-                    <div class="candidature-nom">Paris-Saclay</div>
-                    <div class="candidature-detail">Université Paris-Saclay</div>
-                </a>
-
-                <a href="https://candidatures.univ-eiffel.fr/ecandidat/#!accueilView" target="_blank" rel="noopener" class="carte-candidature">
-                    <div class="candidature-statut attente">En attente</div>
-                    <div class="candidature-nom">Université Gustave Eiffel</div>
-                    <div class="candidature-detail">Marne-la-Vallée</div>
-                </a>
-
-            </div>
-        </div>
-
-    </main>
+</main>
+  
 
     <footer class="footer-ambitions">
         <p>&copy; 2024-2026 GABIN Floralyn. Tous droits réservés.</p>
     </footer>
-
+<script src="recherche.js"></script>
 </body>
 </html>

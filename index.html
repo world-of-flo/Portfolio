@@ -10,20 +10,18 @@
 	<body>
 
 		<header>
-			<div class="header-content">
-				<h1>
-					<a class="aucun-style" href="index.html">GABIN Floralyn</a>
-				</h1>
-				<form class="rechercheforme">
-					<input type="text" placeholder="Recherche..." aria-label="Recherche">
-						<button type="submit" class="btn-recherche">
-							<svg class="recherche-icone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-								<path d="M21 19l-4.35-4.35a7.5 7.5 0 1 0-1.65 1.65L19 21l2-2zM10.5 16a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11z" />
-							</svg>
-						</button>
-					</form>
-			</div>
-		</header>
+        <div class="header-content">
+            <h1><a class="aucun-style" href="index.html">GABIN Floralyn</a></h1>
+            <form class="rechercheforme" id="searchForm">
+                <input type="text" id="searchInput" placeholder="Recherche..." aria-label="Recherche">
+                <button type="submit" class="btn-recherche">
+                    <svg class="recherche-icone" viewBox="0 0 24 24">
+                        <path d="M21 19l-4.35-4.35a7.5 7.5 0 1 0-1.65 1.65L19 21l2-2zM10.5 16a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11z" />
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </header>
 		<nav class="menu2">
 			<ul>
 				<li>
@@ -32,34 +30,11 @@
 				<li>
 					<a href="cv.html">CV</a>
 				</li>
-				<li class="deroulant">
-					<a href="#">Projets</a>
-					<ul class="sous-menu">
-						<li>
-							<a href="stage.html">Stages</a>
-						</li>
-						<li>
-							<a href="atelier.html">Atelier Pro</a>
-						</li>
-						<li>
-							<a href="tp.html">TP</a>
-						</li>
-					</ul>
-				</li>
+				
 				<li>
-					<a href="competences.html">Compétences</a>
-				</li>
-				<li class="deroulant">
-					<a href="#">Veilles</a>
-					<ul class="sous-menu">
-						<li>
-							<a href="technologique.html">Technologique</a>
-						</li>
-						<li>
-							<a href="juridique.html">Juridique</a>
-						</li>
-					</ul>
-				</li>
+					<a href="projet.html">Projet BTS</a>
+				</li>						
+				
 				<li>
 					<a href="ambitions.html">Ambitions</a>
 				</li>
@@ -80,7 +55,7 @@
 						<a href="#propos">À Propos</a>
 					</li>
 					<li>
-						<a href="#btssio">Présentation</a>
+						<a href="#btssio">Table des matières</a>
 					</li>
 				</ul>
 			</nav>
@@ -88,15 +63,15 @@
 			<section id="accueil">
     <div class="accueil-container">
         <div class="accueil-info">
-            <h2 class="titre-lycee">Lycée Auguste Blanqui</h2>
-            <p>Découvrez mon établissement situé à Saint-Ouen-sur-Seine.</p>
-            <a href="https://www.lycee-blanqui.fr/" target="_blank" class="btn-lycee">
+            <h2 class="titre-lycee">Campus Charles de Foucauld</h2>
+            <p>Découvrez mon établissement situé à Paris dans le 18e.</p>
+            <a href="https://www.lyceecharlesdefoucauldsup.fr/" target="_blank" class="btn-lycee">
                 Visiter le site <i class="fas fa-external-link-alt"></i>
             </a>
         </div>
 
         <div class="accueil-image">
-            <img src="lycéeauguste.png" alt="Lycée Auguste Blanqui">
+            <img src="campusCDF.png" alt="Campus Charles de Foucauld">
         </div>
     </div>
 </section>
@@ -107,12 +82,11 @@
 						<h2>Biographie</h2>
 						<div class="scroll-interne-bio">
 							<p>
-								<strong>GABIN Floralyn, 20 ans</strong>
+								<strong>GABIN Floralyn, 21 ans</strong>
 								<p>
-Je suis actuellement étudiante en première année BTS SIO (Services Informatiques aux Organisations) du Lycée Auguste Blanqui à Saint-Ouen et diplômée d'un Baccalauréat avec une mention assez bien.
+Je suis actuellement étudiante en Licence 3 Informatique générale au Campus Charles de Foucauld et diplômée d'un BTS SIO (Services Informatiques aux Organisations) du Lycée Auguste Blanqui à Saint-Ouen
 <br>Ce portfolio a été conçu pour mettre en lumière les divers projets et études auxquels j'ai contribué tout au long de mon parcours.
-<br>
-<br>Vous pouvez consulter ou télécharger mon CV dans la section dédiée. Pour toute prise de contact, rendez-vous dans la rubrique correspondante où toutes les informations nécessaires sont à votre disposition.</p>
+<br></p>
 						</div>
 					</div>
 					<div class="bio-photo">
@@ -124,34 +98,45 @@ Je suis actuellement étudiante en première année BTS SIO (Services Informatiq
 			</section>
 
 			<section id="btssio">
-				<div class="box-presentation">
-					<br>
-					<h2 class="titre-bts">BTS SIO</h2>
-					<p class="sous-titre-bts">Services Informatiques aux Organisations</p>
-				</div>
-				<div class="grille-options">
-                <div class="card-option sisr-highlight">
-                    <div class="option-header">
-                        <h3>SISR</h3>
-                        <div class="badge-selection">Mon Choix</div>
-                    </div>
-                    <p class="option-full-name">Solutions d'Infrastructure, Systèmes et Réseaux</p>
-                   <ul>
-                        <li><i class="fas fa-network-wired"></i> Configuration Switch/Routeur</li>
-                        <li><i class="fas fa-server"></i> Administration Système (Linux/Windows)</li>
-                        <li><i class="fas fa-shield-alt"></i> Sécurité Informatique</li>
-                    </ul></div>
-                <div class="card-option slam-standard">
-                    <h3>SLAM</h3>
-                    <p class="option-full-name">Solutions Logicielles et Applications Métier</p>
-                    <ul>
-                        <li><i class="fab fa-html5"></i> HTML5 / CSS3 / JS</li>
-                        <li><i class="fas fa-code"></i> Développement (Python/PHP/.NET)</li>
-                        <li><i class="fas fa-database"></i> Gestion de bases de données</li>
-                    </ul>
-				</div>
+    <div class="box-presentation">
+        <br>
+        <h2 class="titre-bts">Licence Informatique</h2>
+        <p class="sous-titre-bts">Développement, Réseau et Cybersécurité</p>
+    </div>
+    <div class="grille-options">
+        
+        <!-- Carte Semestre 1 -->
+			<div class="card-option sisr-highlight">
+		<div class="option-header">
+			<h3>Semestre 1</h3>
+		</div>
+		<ul>
+			<li><i class="fas fa-mobile-alt"></i> Développement Mobile (Android/iOS)</li>
+			<li><i class="fas fa-code"></i> Paradigmes de Programmation</li>
+			<li><i class="fas fa-database"></i> Bases de Données & SQL</li>
+			<li><i class="fas fa-terminal"></i> Principes des Systèmes d'Exploitation</li>
+			<li><i class="fas fa-lock-open"></i> Authentification & Contrôle d'accès</li>
+			<li><i class="fas fa-project-diagram"></i> Algorithmique Avancée</li>
+			<li><i class="fas fa-network-wired"></i> Réseaux & Architectures Web</li>
+			<li><i class="fas fa-square-root-alt"></i> Mathématiques Discrètes</li>
+		</ul>
+		</div>
+        
+        <!-- Carte Semestre 2 -->
+        <div class="card-option slam-standard">
+            <div class="option-header">
+                <h3>Semestre 2</h3>
             </div>
-			</section>
+            <ul>
+                <li><i class="fab fa-html5"></i> Systèmes d'information web</li>
+                <li><i class="fas fa-tasks"></i> Management de projet</li>
+                <li><i class="fas fa-language"></i> Anglais professionnel</li>
+                <li><i class="fas fa-laptop-code"></i> Programmation avancée</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
 
 		
 
@@ -160,5 +145,6 @@ Je suis actuellement étudiante en première année BTS SIO (Services Informatiq
 <footer>
 				<p>&copy; 2024-2026 GABIN Floralyn. Tous droits réservés.</p>
 			</footer>
+<script src="recherche.js"></script>
 	</body>
 </html>

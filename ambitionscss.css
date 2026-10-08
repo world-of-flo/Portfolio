@@ -42,6 +42,7 @@ body {
 .grille-ambitions {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
     margin-bottom: 60px;
     max-width: 900px;

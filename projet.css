@@ -80,7 +80,7 @@ section {
 }
 
 .accueil-info p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #ccc;
     margin-bottom: 30px;
 }
@@ -117,53 +117,12 @@ section {
 }
 
 
-/* --- MAQUETTE BIOGRAPHIE (AJUSTÉE) --- */
-.maquette-biographie {
-    display: flex;
-    width: 90%;
-    max-width: 1200px;
-    background-color: #1a1a1a;
-    border: px solid #444;
-    padding: 60px;
-    gap: 60px;
-    align-items: flex-start; /* Aligne le haut du texte et de la photo */
-}
-
-.bio-texte { flex: 2; }
-.bio-texte h2 { font-size: 3.5rem; margin-bottom: 20px; }
-
-.scroll-interne-bio {
-    font-size: 2rem; /* Lecture confortable */
-    line-height: 1.8;
-    max-height: 400px;
-    overflow-y: auto;
-}
-
-.bio-photo { 
-    flex: 1; 
-    display: flex; 
-    justify-content: center;
-    padding-top: 20px; /* Ajustement précis pour être à hauteur du texte */
-    
-}
-
-.cadre-photo-bio {
-    width: 200px; /* Taille standard photo */
-    height: 260px;
-   
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.8rem;
-}
-
-
 
 /* --- SECTION BTS SIO OPTIONS --- */
 
 #btssio {
     justify-content: flex-start; /* Aligne le contenu vers le haut pour laisser de la place */
-    padding-top: 250px;
+    padding-top: 280px;
 }
 
 .box-presentation {

@@ -31,6 +31,10 @@ body {
     text-transform: uppercase;
 }
 
+.entete-contact p {
+    font-size: 15px;
+}
+
 /* --- CARTE D'INFO --- */
 .info-card {
     background-color: #1a1a1a;
